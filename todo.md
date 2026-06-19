@@ -3,7 +3,7 @@
 ## 高優先（效能）
 
 - [x] 將 `index.html`、`cases.html`、`xuan-lin-en.html` 中的 base64 圖片全部替換為外部檔案路徑（使用 `state/` 資料夾中的照片）
-- [x] 壓縮 `state/` 資料夾中的照片（JPEG quality 80；WebP 需另外安裝 cwebp 工具）
+- [x] 壓縮 `state/` 資料夾中的照片並轉為 WebP 格式（使用 sharp，quality 80）
 
 ## 中優先（維護性）
 
