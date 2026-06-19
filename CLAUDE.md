@@ -17,7 +17,7 @@ XuanLin/
 ├── README.md
 └── docs/                       # ← 網站根目錄
     ├── index.html              # 主頁（繁體中文版）
-    ├── xuan-lin-en.html        # 主頁（英文版）
+    ├── index-en.html        # 主頁（英文版）
     ├── cases.html              # 案例作品集（中文）
     ├── cases-en.html           # 案例作品集（英文）
     ├── resume.html             # 履歷（中文）
@@ -41,20 +41,20 @@ XuanLin/
 
 | 中文 | 英文 | 說明 |
 |---|---|---|
-| `index.html` | `xuan-lin-en.html` | 主頁 |
+| `index.html` | `index-en.html` | 主頁 |
 | `cases.html` | `cases-en.html` | 案例作品集 |
 | `resume.html` | `resume-en.html` | 履歷 |
 
-- 中文頁的「回首頁」連到 `index.html`，英文頁連到 `xuan-lin-en.html`
+- 中文頁的「回首頁」連到 `index.html`，英文頁連到 `index-en.html`
 - `index.html` 的 about-highlight-link → `resume.html`
-- `xuan-lin-en.html` 的 about-highlight-link → `resume-en.html`
-- `xuan-lin-en.html` 的 Cases 連結（桌機 nav + 手機 menu）→ `cases-en.html`
+- `index-en.html` 的 about-highlight-link → `resume-en.html`
+- `index-en.html` 的 Cases 連結（桌機 nav + 手機 menu）→ `cases-en.html`
 
 ---
 
 ## CSS 架構
 
-- `docs/css/style.css`：`index.html` 和 `xuan-lin-en.html` **共用**的樣式。
+- `docs/css/style.css`：`index.html` 和 `index-en.html` **共用**的樣式。
 - 其餘四個頁面（cases、cases-en、resume、resume-en）各自有 **inline `<style>`**，不使用 style.css。
 
 ### 修改樣式的原則
@@ -63,7 +63,7 @@ XuanLin/
 |---|---|
 | 顏色變數、字型、nav、hero、about、contact | `docs/css/style.css` |
 | index.html 的 service / process / trust 區塊 | `docs/index.html` 的 `<style>` |
-| 英文版的 bring / highlights 區塊 | `docs/xuan-lin-en.html` 的 `<style>` |
+| 英文版的 bring / highlights 區塊 | `docs/index-en.html` 的 `<style>` |
 | 案例頁的所有樣式 | `docs/cases.html` 或 `docs/cases-en.html` 的 `<style>` |
 | 履歷頁的所有樣式 | `docs/resume.html` 或 `docs/resume-en.html` 的 `<style>` |
 
@@ -138,7 +138,7 @@ XuanLin/
 ## 注意事項
 
 - 所有網站檔案都在 `docs/` 底下，修改時路徑要從 `docs/` 開始找。
-- 修改 `docs/css/style.css` 會同時影響 `index.html` 和 `xuan-lin-en.html`，請確認兩頁的呈現都正常。
+- 修改 `docs/css/style.css` 會同時影響 `index.html` 和 `index-en.html`，請確認兩頁的呈現都正常。
 - `cases.html` 的 `.photo-thumb:hover img` 使用 `scale(1.06)`，與其他頁面的 `scale(1.05)` 略有不同，是刻意設計。
 - 內容更動時記得同步更新對應的中英文版本（共 3 組語言對）。
-- cases-en.html 和 resume-en.html 的 nav「← Back」連回英文主頁 `xuan-lin-en.html`。
+- cases-en.html 和 resume-en.html 的 nav「← Back」連回英文主頁 `index-en.html`。
