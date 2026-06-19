@@ -50,6 +50,12 @@ nav.scrolled { box-shadow:0 2px 24px rgba(13,27,42,0.08); }
 }
 .mobile-menu.open { display:flex; }
 .mobile-menu a { color:var(--text-mid); text-decoration:none; font-weight:500; font-size:1rem; padding:0.5rem 0; border-bottom:1px solid var(--bg2); }
+.nav-right { display:flex; align-items:center; gap:1rem; }
+.nav-links a.active { color:var(--gold); font-weight:700; }
+.lang-switch { display:flex; align-items:center; border:1px solid rgba(13,27,42,0.15); border-radius:999px; overflow:hidden; font-size:0.75rem; font-weight:700; letter-spacing:0.06em; }
+.lang-switch a { padding:0.35rem 0.8rem; text-decoration:none; color:var(--text-mid); transition:all 0.2s; }
+.lang-switch a.active { background:var(--navy); color:white; }
+.lang-switch a:not(.active):hover { background:var(--bg2); }
 
 /* === HERO (shared) === */
 #hero {
@@ -150,6 +156,14 @@ section { padding:5.5rem 2.5rem; }
 
 /* === FOOTER === */
 footer { background:var(--navy); color:rgba(255,255,255,0.3); text-align:center; padding:2rem; font-size:0.78rem; letter-spacing:0.06em; }
+
+/* === IG FLOAT === */
+.ig-float { position:fixed; bottom:2rem; right:2rem; z-index:200; }
+.ig-float-btn { display:flex; align-items:center; gap:0; background:var(--navy); color:white; text-decoration:none; border-radius:999px; padding:0.7rem 0.8rem; box-shadow:0 4px 20px rgba(13,27,42,0.2); transition:gap 0.3s ease, padding 0.3s ease, background 0.2s, color 0.2s; overflow:hidden; }
+.ig-float-btn:hover { gap:0.5rem; padding:0.7rem 1.1rem; background:var(--gold); color:var(--navy); }
+.ig-icon { flex-shrink:0; display:block; }
+.ig-label { font-size:0.82rem; font-weight:700; white-space:nowrap; max-width:0; overflow:hidden; letter-spacing:0.03em; transition:max-width 0.3s ease; }
+.ig-float-btn:hover .ig-label { max-width:120px; }
 
 /* === REVEAL ANIMATION === */
 .reveal { opacity:0; transform:translateY(24px); transition:all 0.65s ease; }

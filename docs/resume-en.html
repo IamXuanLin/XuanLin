@@ -6,6 +6,7 @@
 <title>Yi-Xuan Lin Xuan | Resume</title>
 <meta name="description" content="Yi-Xuan Lin (Xuan) — International Exhibition Project Manager & Brand Designer with experience in exhibition coordination, project management, and UI/UX design.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -22,22 +23,7 @@ html{scroll-behavior:smooth;}
 body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;}
 
 /* NAV */
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:100;
-  display:flex;align-items:center;justify-content:space-between;
-  padding:1.1rem 2.5rem;
-  background:rgba(248,249,251,0.96);
-  backdrop-filter:blur(16px);
-  border-bottom:1px solid rgba(13,27,42,0.08);
-  box-shadow:0 2px 24px rgba(13,27,42,0.06);
-}
-.nav-logo img{height:30px;display:block;}
-.nav-right{display:flex;align-items:center;gap:0.75rem;}
-.nav-back{display:flex;align-items:center;gap:0.4rem;color:var(--text-mid);text-decoration:none;font-size:0.83rem;font-weight:500;padding:0.45rem 1.1rem;border-radius:999px;border:1px solid rgba(13,27,42,0.15);transition:all 0.2s;letter-spacing:0.04em;}
-.nav-back:hover{background:var(--navy);color:white;border-color:var(--navy);}
-.nav-lang{display:flex;align-items:center;border:1px solid rgba(13,27,42,0.15);border-radius:999px;overflow:hidden;font-size:0.75rem;font-weight:700;letter-spacing:0.06em;}
-.nav-lang a{padding:0.35rem 0.8rem;text-decoration:none;color:var(--text-mid);transition:all 0.2s;}
-.nav-lang a.active{background:var(--navy);color:white;}
+nav{box-shadow:0 2px 24px rgba(13,27,42,0.06);}
 
 /* HERO */
 .resume-hero{padding:7.5rem 2.5rem 4.5rem;background:var(--navy);position:relative;overflow:hidden;}
@@ -115,16 +101,34 @@ footer{background:var(--navy);color:rgba(255,255,255,0.25);text-align:center;pad
 </head>
 <body>
 
-<nav>
+<nav id="navbar">
   <a href="index-en.html" class="nav-logo"><img src="images/xuan-logo-v2.svg" alt="Xuan Lin"/></a>
+  <ul class="nav-links">
+    <li><a href="index-en.html#about">About</a></li>
+    <li><a href="index-en.html#bring">What I Bring</a></li>
+    <li><a href="index-en.html#highlights">Highlights</a></li>
+    <li><a href="cases-en.html">Cases</a></li>
+    <li><a href="index-en.html#trust">Clients</a></li>
+    <li><a href="resume-en.html" class="active">Resume</a></li>
+  </ul>
   <div class="nav-right">
-    <div class="nav-lang">
+    <div class="lang-switch">
       <a href="resume.html">中</a>
       <a href="resume-en.html" class="active">EN</a>
     </div>
-    <a href="index-en.html" class="nav-back">← Home</a>
+    <a href="mailto:mialin1220@gmail.com" class="nav-cta">Let's Work Together</a>
   </div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
 </nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index-en.html#about" onclick="closeMobile()">About</a>
+  <a href="index-en.html#bring" onclick="closeMobile()">What I Bring</a>
+  <a href="index-en.html#highlights" onclick="closeMobile()">Highlights</a>
+  <a href="cases-en.html">Cases</a>
+  <a href="index-en.html#trust" onclick="closeMobile()">Clients</a>
+  <a href="resume-en.html">Resume</a>
+  <a href="resume.html" style="color:var(--gold)!important">中文版 →</a>
+</div>
 
 <!-- HERO -->
 <section class="resume-hero">
@@ -331,6 +335,12 @@ footer{background:var(--navy);color:rgba(255,255,255,0.25);text-align:center;pad
 
 <footer>© 2026 XUAN LIN &nbsp;·&nbsp; Project Management × Exhibition Coordination &nbsp;·&nbsp; TAIWAN</footer>
 
+<div class="ig-float">
+  <a href="https://instagram.com/hxuan_er" target="_blank" class="ig-float-btn" aria-label="Instagram @hxuan_er">
+    <svg class="ig-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+    <span class="ig-label">@hxuan_er</span>
+  </a>
+</div>
 <script src="js/main.js"></script>
 </body>
 </html>
