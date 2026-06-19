@@ -123,6 +123,8 @@ section { padding:5.5rem 2.5rem; }
 .photo-caption { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(transparent,rgba(13,27,42,0.75)); color:white; font-size:0.7rem; font-weight:500; padding:1.2rem 0.75rem 0.5rem; letter-spacing:0.04em; }
 .about-text p { color:var(--text-mid); line-height:1.9; margin-bottom:1rem; font-size:0.96rem; }
 .about-highlight { border-left:2px solid var(--gold); padding:0.9rem 1.25rem; margin:1.75rem 0; font-weight:700; color:var(--navy); font-size:0.95rem; background:var(--gold-pale); }
+.about-highlight-link { display:block; text-decoration:none; transition:background 0.2s, border-color 0.2s; }
+.about-highlight-link:hover { background:var(--gold-light); border-color:var(--gold); color:var(--navy); }
 .about-tags { display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:1.5rem; }
 .tag { background:var(--bg2); color:var(--text-mid); padding:0.35rem 0.9rem; border-radius:2px; font-size:0.78rem; font-weight:500; letter-spacing:0.04em; }
 

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>林薏軒 Xuan Lin｜履歷</title>
+<meta name="description" content="林薏軒 (Xuan Lin) 的個人履歷 — 國際展務專案經理、品牌設計師，具備豐富的展會統籌、專案管理與 UI/UX 設計經驗。">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet"></noscript>
+<style>
+:root {
+  --navy:#0D1B2A; --navy-mid:#1A2D42;
+  --gold:#C9A84C; --gold-light:#E2C97E; --gold-pale:#F5EDD6;
+  --bg:#F8F9FB; --bg2:#EEF1F5; --white:#FFFFFF;
+  --text:#2C3E50; --text-mid:#4A5568; --text-light:#718096;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;}
+
+/* NAV */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.1rem 2.5rem;
+  background:rgba(248,249,251,0.96);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(13,27,42,0.08);
+  box-shadow:0 2px 24px rgba(13,27,42,0.06);
+}
+.nav-logo img{height:30px;display:block;}
+.nav-right{display:flex;align-items:center;gap:0.75rem;}
+.nav-back{
+  display:flex;align-items:center;gap:0.4rem;
+  color:var(--text-mid);text-decoration:none;font-size:0.83rem;font-weight:500;
+  padding:0.45rem 1.1rem;border-radius:999px;
+  border:1px solid rgba(13,27,42,0.15);transition:all 0.2s;letter-spacing:0.04em;
+}
+.nav-back:hover{background:var(--navy);color:white;border-color:var(--navy);}
+.nav-lang{
+  display:flex;align-items:center;border:1px solid rgba(13,27,42,0.15);
+  border-radius:999px;overflow:hidden;font-size:0.75rem;font-weight:700;letter-spacing:0.06em;
+}
+.nav-lang a{padding:0.35rem 0.8rem;text-decoration:none;color:var(--text-mid);transition:all 0.2s;}
+.nav-lang a.active{background:var(--navy);color:white;}
+
+/* HERO */
+.resume-hero{
+  padding:7.5rem 2.5rem 4.5rem;
+  background:var(--navy);
+  position:relative;overflow:hidden;
+}
+.resume-hero::before{
+  content:'';position:absolute;right:-150px;top:-150px;
+  width:550px;height:550px;border-radius:50%;
+  border:1px solid rgba(201,168,76,0.1);
+}
+.resume-hero::after{
+  content:'';position:absolute;right:-50px;top:-50px;
+  width:380px;height:380px;border-radius:50%;
+  border:1px solid rgba(201,168,76,0.07);
+}
+.hero-inner{max-width:1020px;margin:0 auto;position:relative;z-index:1;}
+.hero-label{
+  font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:0.75rem;display:block;
+}
+.hero-name{
+  font-family:'Cormorant Garamond',serif;font-weight:300;
+  font-size:clamp(2.8rem,5.5vw,4.2rem);color:white;line-height:1.05;
+  margin-bottom:0.4rem;
+}
+.hero-name em{font-style:italic;color:var(--gold);}
+.hero-subtitle{font-size:1rem;color:rgba(255,255,255,0.5);margin-bottom:2.5rem;letter-spacing:0.04em;}
+.hero-contacts{display:flex;flex-wrap:wrap;gap:1.25rem;}
+.hero-contact-link{
+  display:flex;align-items:center;gap:0.5rem;
+  color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.84rem;transition:color 0.2s;
+}
+.hero-contact-link:hover{color:var(--gold);}
+
+/* BODY LAYOUT */
+.resume-layout{
+  max-width:1020px;margin:0 auto;
+  display:grid;grid-template-columns:260px 1fr;gap:4rem;
+  padding:4.5rem 2.5rem;
+}
+
+/* SIDEBAR */
+.sidebar-block{margin-bottom:2.75rem;}
+.sidebar-heading{
+  font-size:0.68rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:1rem;
+  padding-bottom:0.55rem;border-bottom:1px solid rgba(201,168,76,0.2);
+}
+.edu-school{font-weight:700;font-size:0.9rem;color:var(--navy);}
+.edu-dept{font-size:0.82rem;color:var(--text-mid);margin-top:0.2rem;}
+.edu-year{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.9rem;color:var(--text-light);margin-top:0.25rem;}
+.lang-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:0.6rem;}
+.lang-name{font-size:0.86rem;color:var(--text);font-weight:500;}
+.lang-badge{font-size:0.72rem;color:var(--text-light);background:var(--bg2);padding:0.18rem 0.6rem;border-radius:999px;}
+.skill-group{margin-bottom:1.1rem;}
+.skill-group-label{font-size:0.73rem;color:var(--text-light);margin-bottom:0.45rem;font-weight:500;}
+.chip-row{display:flex;flex-wrap:wrap;gap:0.35rem;}
+.chip{background:var(--bg2);color:var(--text-mid);padding:0.28rem 0.7rem;border-radius:2px;font-size:0.75rem;font-weight:500;letter-spacing:0.02em;}
+
+/* TIMELINE */
+.section-heading{
+  font-size:0.68rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:2rem;
+  padding-bottom:0.55rem;border-bottom:1px solid rgba(201,168,76,0.2);
+}
+.timeline{position:relative;padding-left:1.5rem;}
+.timeline::before{content:'';position:absolute;left:0;top:4px;bottom:1rem;width:1px;background:rgba(201,168,76,0.2);}
+.tl-item{position:relative;margin-bottom:2.75rem;}
+.tl-item::before{
+  content:'';position:absolute;left:-1.5rem;top:5px;
+  width:9px;height:9px;border-radius:50%;background:var(--gold);
+  transform:translateX(calc(-50% + 0.5px));
+  box-shadow:0 0 0 3px var(--bg);
+}
+.tl-date{font-size:0.74rem;color:var(--text-light);font-weight:500;letter-spacing:0.04em;margin-bottom:0.25rem;}
+.tl-role{font-weight:700;font-size:0.97rem;color:var(--navy);margin-bottom:0.15rem;}
+.tl-company{font-size:0.83rem;color:var(--gold);font-weight:500;margin-bottom:0.8rem;}
+.tl-list{list-style:none;}
+.tl-list li{font-size:0.84rem;color:var(--text-mid);line-height:1.85;padding-left:1rem;position:relative;margin-bottom:0.25rem;}
+.tl-list li::before{content:'';position:absolute;left:0;top:0.7em;width:3.5px;height:3.5px;border-radius:50%;background:var(--gold);}
+
+/* PROJECTS */
+.projects-wrap{background:var(--navy);padding:4.5rem 2.5rem;}
+.projects-inner{max-width:1020px;margin:0 auto;}
+.proj-label{font-size:0.68rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.75rem;}
+.proj-title{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(1.8rem,3.2vw,2.5rem);color:white;margin-bottom:2.75rem;line-height:1.2;}
+.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;}
+.proj-card{background:rgba(255,255,255,0.04);border:1px solid rgba(201,168,76,0.15);border-radius:4px;padding:1.5rem 1.4rem;transition:border-color 0.25s,background 0.25s;}
+.proj-card:hover{border-color:rgba(201,168,76,0.4);background:rgba(255,255,255,0.07);}
+.proj-year{font-size:0.7rem;color:var(--gold);font-weight:700;letter-spacing:0.1em;margin-bottom:0.3rem;}
+.proj-org{font-size:0.76rem;color:rgba(255,255,255,0.35);margin-bottom:0.65rem;}
+.proj-name{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.05rem;color:white;line-height:1.35;margin-bottom:0.55rem;}
+.proj-desc{font-size:0.79rem;color:rgba(255,255,255,0.42);line-height:1.8;}
+
+/* FOOTER */
+footer{background:var(--navy);color:rgba(255,255,255,0.25);text-align:center;padding:1.75rem;font-size:0.78rem;letter-spacing:0.06em;border-top:1px solid rgba(255,255,255,0.05);}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(20px);transition:all 0.6s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  nav{padding:1rem 1.25rem;}
+  .resume-hero{padding:6rem 1.25rem 3rem;}
+  .resume-layout{grid-template-columns:1fr;gap:0;padding:3rem 1.25rem;}
+  .resume-layout aside{border-bottom:1px solid var(--bg2);padding-bottom:2.5rem;margin-bottom:2.5rem;}
+  .projects-wrap{padding:3rem 1.25rem;}
+  .proj-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo"><img src="images/xuan-logo-v2.svg" alt="Xuan Lin"/></a>
+  <div class="nav-right">
+    <div class="nav-lang">
+      <a href="resume.html" class="active">中</a>
+      <a href="resume-en.html">EN</a>
+    </div>
+    <a href="index.html" class="nav-back">← 回首頁</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="resume-hero">
+  <div class="hero-inner">
+    <span class="hero-label">個人履歷</span>
+    <h1 class="hero-name">林薏軒 <em>Xuan</em></h1>
+    <p class="hero-subtitle">國際展務專案經理 × 品牌設計師</p>
+    <div class="hero-contacts">
+      <a href="mailto:mialin1220@gmail.com" class="hero-contact-link">📩&nbsp; mialin1220@gmail.com</a>
+      <a href="tel:+886910978753" class="hero-contact-link">📱&nbsp; +886 910-978-753</a>
+      <a href="https://instagram.com/hxuan_er" target="_blank" class="hero-contact-link">📸&nbsp; @hxuan_er</a>
+    </div>
+  </div>
+</section>
+
+<!-- BODY -->
+<div class="resume-layout">
+
+  <!-- SIDEBAR -->
+  <aside>
+
+    <div class="sidebar-block reveal">
+      <div class="sidebar-heading">學歷</div>
+      <div class="edu-school">中原大學</div>
+      <div class="edu-dept">商業設計學系</div>
+      <div class="edu-year">2014 – 2018 學士</div>
+    </div>
+
+    <div class="sidebar-block reveal">
+      <div class="sidebar-heading">語言能力</div>
+      <div class="lang-row">
+        <span class="lang-name">中文</span>
+        <span class="lang-badge">母語</span>
+      </div>
+      <div class="lang-row">
+        <span class="lang-name">英文</span>
+        <span class="lang-badge">流利</span>
+      </div>
+      <div class="lang-row">
+        <span class="lang-name">西班牙文</span>
+        <span class="lang-badge">初級 A2</span>
+      </div>
+    </div>
+
+    <div class="sidebar-block reveal">
+      <div class="sidebar-heading">技能</div>
+      <div class="skill-group">
+        <div class="skill-group-label">專案與展務</div>
+        <div class="chip-row">
+          <span class="chip">專案管理</span>
+          <span class="chip">展會統籌</span>
+          <span class="chip">提案撰寫</span>
+          <span class="chip">策展規劃</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">設計工具</div>
+        <div class="chip-row">
+          <span class="chip">Adobe Illustrator</span>
+          <span class="chip">Photoshop</span>
+          <span class="chip">Premiere</span>
+          <span class="chip">Canva</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">數位設計</div>
+        <div class="chip-row">
+          <span class="chip">UI/UX 設計</span>
+          <span class="chip">品牌視覺</span>
+          <span class="chip">社群內容</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">辦公軟體</div>
+        <div class="chip-row">
+          <span class="chip">Excel</span>
+          <span class="chip">PowerPoint</span>
+          <span class="chip">Word</span>
+        </div>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- WORK EXPERIENCE -->
+  <main>
+    <div class="section-heading">工作經歷</div>
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-date">2024.07 – 至今</div>
+        <div class="tl-role">自由工作者</div>
+        <div class="tl-company">提案撰寫 · 專案規劃 · 策展規劃 · UI/UX 設計 · 品牌策略</div>
+        <ul class="tl-list">
+          <li>撰寫公部門與產業合作計畫書，獨立完成需求釐清、KPI 設定、工作項目拆解、期程規劃與成果回報架構。</li>
+          <li>主筆規劃潛水旅遊推廣計畫，延伸執行 2025 香港 DRT「Dive Taiwan 探索台灣」主題展區及 2026 新加坡 ADEX 潛水展，共蒐集 1,500+ 份國際觀眾問卷。</li>
+          <li>為鍵深坊 DeepCoding（台灣程式教育平台）負責品牌形象延伸、網站資訊架構設計、課程登陸頁優化與社群內容製作。</li>
+          <li>與加拿大 SaaS 新創公司遠距協作，參與前台 UI 設計與互動介面優化，支援北美市場設計語言在地化與 Dashboard 建構。</li>
+          <li>協助教育、科技與新創團隊進行內容企劃、社群推廣與方案設計，整合內外部資源推進專案交付。</li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-date">2024.04 – 2024.07</div>
+        <div class="tl-role">專案副理</div>
+        <div class="tl-company">文化大學 推廣教育部</div>
+        <ul class="tl-list">
+          <li>統籌國科會頒獎典禮活動流程與細節執行，跨單位協調場地、廠商與團隊資源，確保現場順利交付。</li>
+          <li>規劃產官學 AI 課程開班流程，整合課程內容、師資與行政資源，提升開班效率與學員管理品質。</li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-date">2023.05 – 2024.03</div>
+        <div class="tl-role">專案規劃師</div>
+        <div class="tl-company">資拓宏宇國際股份有限公司</div>
+        <ul class="tl-list">
+          <li>協助策劃中華電信 5G 建置計畫，包含目標設定、投標文件、預算編製與驗收文件交付。</li>
+          <li>協同管理國發會亞洲矽谷計畫，確保進度符合政府政策要求。</li>
+          <li>參與計畫查訪、採購與查帳流程，確保專案合規推進與交付品質。</li>
+          <li>統籌單位參展規劃，整合內外部資源完成展務交付。</li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-date">2019.10 – 2023.02</div>
+        <div class="tl-role">專任助理</div>
+        <div class="tl-company">中原大學 設計學院</div>
+        <ul class="tl-list">
+          <li>主責教育部「人文社會與科學前瞻人才培育計畫」專案管理（共 4 期），負責時程與預算規劃、跨單位協調、成果彙整與結案報告。</li>
+          <li>推動講座、Podcast 製作《埤塘的天方夜譚》、學生專案影音記錄、參展等推廣任務，建立可持續的活動執行流程。</li>
+          <li>籌辦【WATER MATTER】期末成果展（獲新聞媒體報導）及「埤塘物聯網」UFO 成果展。</li>
+          <li>參與《千塘之境》APP 專案（Android、iOS），協助上架與推廣流程。</li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-date">2017 – 2018</div>
+        <div class="tl-role">Associate Producer 助理</div>
+        <div class="tl-company">Emerald Coast Production（美國）</div>
+        <ul class="tl-list">
+          <li>負責聯繫投資者、撰寫投資提案與電影項目提報，協助製作團隊完成 $500,000 資金募集。</li>
+          <li>擔任中美之間的書信往來溝通橋梁，負責智財權讓渡、保密協定等法律文件英翻中。</li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+
+</div>
+
+<!-- PROJECTS -->
+<section class="projects-wrap">
+  <div class="projects-inner">
+    <span class="proj-label">代表性成果</span>
+    <h2 class="proj-title">參與計畫與作品</h2>
+    <div class="proj-grid">
+
+      <div class="proj-card reveal">
+        <div class="proj-year">2025 – 2026</div>
+        <div class="proj-org">自由工作者 × BlueTrend 藍色脈動</div>
+        <div class="proj-name">國際潛水展覽統籌</div>
+        <div class="proj-desc">香港 DRT 2025「Dive Taiwan 探索台灣」主題展區 × 新加坡 ADEX 2026 台灣館，共蒐集 1,500+ 份國際觀眾問卷。</div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-year">2023 – 2024</div>
+        <div class="proj-org">資拓宏宇國際股份有限公司</div>
+        <div class="proj-name">國發會 × 中華電信 5G 計畫</div>
+        <div class="proj-desc">離岸風電場結合國產 5G 專網應用計畫、亞洲矽谷 5GO-RAN 商用實證計畫，並代表參展 Smart City 智慧城市展。</div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-year">2023</div>
+        <div class="proj-org">20% DeepCoding（台灣）</div>
+        <div class="proj-name">品牌視覺 × 行銷設計</div>
+        <div class="proj-desc">台灣線上程式教育平台品牌視覺設計，涵蓋社群貼文設計、銷售素材與品牌形象系統延伸。</div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-year">2022</div>
+        <div class="proj-org">中原大學 設計學院</div>
+        <div class="proj-name">UFO「埤塘物聯網」成果展</div>
+        <div class="proj-desc">第三、四期 UFO 計畫期末成果展策劃與執行，及 Podcast 節目《埤塘的天方夜譚》製作。</div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-year">2022</div>
+        <div class="proj-org">中原大學 設計學院</div>
+        <div class="proj-name">《千塘之境》APP</div>
+        <div class="proj-desc">Android、iOS 雙平台 APP 專案參與，協助上架流程與展覽推廣執行。</div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-year">2020</div>
+        <div class="proj-org">中原大學 UFO 計畫</div>
+        <div class="proj-name">【WATER MATTER】期末成果展</div>
+        <div class="proj-desc">第一期 UFO 計畫期末成果展策劃與執行，獲新聞媒體報導，展現台法跨國環境藝術合作成果。</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 XUAN LIN &nbsp;·&nbsp; 專案管理 × 展會統籌 &nbsp;·&nbsp; TAIWAN</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
