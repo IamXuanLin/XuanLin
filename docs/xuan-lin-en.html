@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xuan Lin | International Exhibition Project Manager</title>
+<meta name="description" content="Xuan Lin — freelance project manager and exhibition coordinator helping Taiwanese organizations show up and stand out at international exhibitions. ADEX Singapore 2026 & DRT Hong Kong 2025.">
+<meta property="og:title" content="Xuan Lin | International Exhibition Project Manager">
+<meta property="og:description" content="Helping Taiwan-based organizations land precisely on the international stage. 1,500+ surveys collected across Singapore & Hong Kong.">
+<meta property="og:image" content="images/photos/新加坡_1.webp">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+/* HERO - EN decorative elements */
+.hero-ring { position:absolute; right:-200px; top:-200px; width:700px; height:700px; border-radius:50%; border:1px solid rgba(201,168,76,0.12); }
+.hero-ring2 { position:absolute; right:-100px; top:-100px; width:500px; height:500px; border-radius:50%; border:1px solid rgba(201,168,76,0.08); }
+.hero-deco { position:absolute; left:-120px; bottom:-120px; width:400px; height:400px; border-radius:50%; border:1px solid rgba(255,255,255,0.04); }
+h1 { font-family:'Cormorant Garamond',serif; font-weight:300; font-size:clamp(2.4rem,5vw,3.8rem); line-height:1.1; color:var(--white); margin-bottom:1.75rem; animation:fadeUp 0.6s 0.1s ease both; }
+
+/* NAV additions */
+.nav-right { display:flex; align-items:center; gap:1rem; }
+.lang-switch { display:flex; align-items:center; border:1px solid rgba(13,27,42,0.15); border-radius:999px; overflow:hidden; font-size:0.75rem; font-weight:700; letter-spacing:0.06em; }
+.lang-switch a { padding:0.35rem 0.8rem; text-decoration:none; color:var(--text-mid); transition:all 0.2s; }
+.lang-switch a.active { background:var(--navy); color:white; }
+.lang-switch a:not(.active):hover { background:var(--bg2); }
+
+/* WHAT I BRING */
+#bring { background:var(--bg); }
+.bring-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:3.5rem; }
+.bring-card { background:var(--white); border-radius:4px; padding:2rem 1.75rem; border:1px solid rgba(13,27,42,0.07); transition:all 0.3s; position:relative; overflow:hidden; }
+.bring-card::after { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:var(--gold); transform:scaleX(0); transform-origin:left; transition:transform 0.3s; }
+.bring-card:hover { transform:translateY(-5px); box-shadow:0 16px 40px rgba(13,27,42,0.08); }
+.bring-card:hover::after { transform:scaleX(1); }
+.bring-arrow { font-size:1.1rem; color:var(--gold); font-weight:700; margin-bottom:0.9rem; }
+.bring-card h3 { font-weight:700; font-size:0.97rem; margin-bottom:0.65rem; color:var(--navy); }
+.bring-card p { font-size:0.86rem; color:var(--text-mid); line-height:1.8; }
+
+/* HIGHLIGHTS */
+#highlights { background:var(--navy); }
+.highlights-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:3.5rem; }
+.highlight-card { background:rgba(255,255,255,0.04); border:1px solid rgba(201,168,76,0.15); border-radius:4px; padding:1.75rem; }
+.highlight-flag { font-size:1.3rem; margin-bottom:0.75rem; }
+.highlight-title { font-weight:700; font-size:0.95rem; color:white; margin-bottom:0.5rem; }
+.highlight-desc { font-size:0.86rem; color:rgba(255,255,255,0.5); line-height:1.8; }
+.highlight-num { font-family:'Cormorant Garamond',serif; font-weight:600; font-size:1.8rem; color:var(--gold); margin-top:1rem; line-height:1; }
+.highlight-num-label { font-size:0.7rem; color:rgba(255,255,255,0.3); letter-spacing:0.07em; margin-top:2px; }
+
+/* TRUST */
+#trust { background:var(--white); }
+.testimonial-text { font-family:'Cormorant Garamond',serif; font-size:1.3rem; font-weight:300; color:white; line-height:1.6; margin-bottom:1.25rem; font-style:italic; }
+
+@media (max-width:768px) {
+  .bring-grid, .highlights-grid { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+<nav id="navbar">
+  <a href="#hero" class="nav-logo"><img src="images/xuan-logo-v2.svg" alt="Xuan Lin"/></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#bring">What I Bring</a></li>
+    <li><a href="#highlights">Highlights</a></li>
+    <li><a href="#trust">Clients</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switch">
+      <a href="index.html">中</a>
+      <a href="xuan-lin-en.html" class="active">EN</a>
+    </div>
+    <a href="mailto:mialin1220@gmail.com" class="nav-cta">Let's Work Together</a>
+  </div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#bring" onclick="closeMobile()">What I Bring</a>
+  <a href="#highlights" onclick="closeMobile()">Highlights</a>
+  <a href="#trust" onclick="closeMobile()">Clients</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+  <a href="index.html" style="color:var(--gold)!important">中文版 →</a>
+</div>
+
+<section id="hero">
+  <div class="hero-ring"></div><div class="hero-ring2"></div><div class="hero-deco"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Project Management × Exhibition Coordination</div>
+    <h1>I help Taiwanese organizations<br><em>show up</em> — and stand out —<br>in international spaces.</h1>
+    <p class="hero-sub">You tell me the goal. I handle the rest.<br>From planning to on-site execution, I bring Taiwan's stories to global stages with precision and care.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Let's Work Together</a>
+      <a href="cases.html" class="btn-secondary">View Case Studies</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">1,500+</div><div class="stat-label">International surveys collected</div></div>
+      <div><div class="stat-num">2</div><div class="stat-label">Overseas exhibition cities</div></div>
+      <div><div class="stat-num">2 yr</div><div class="stat-label">Freelance exhibition experience</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="photo-stack reveal">
+        <div class="photo-main"><img src="images/photos/香港_1.webp" alt="Xuan at DRT Hong Kong 2025"/><div class="photo-caption">🇭🇰 DRT Hong Kong 2025</div></div>
+        <div class="photo-row">
+          <div class="photo-thumb"><img src="images/photos/新加坡_4.webp" alt="Engaging with international visitors"/><div class="photo-caption">Engaging visitors</div></div>
+          <div class="photo-thumb"><img src="images/photos/新加坡_2.webp" alt="ADEX Singapore 2026"/><div class="photo-caption">🇸🇬 ADEX Singapore 2026</div></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="section-label">About</div>
+        <h2 class="section-title">Cross-cultural project executor</h2>
+        <p>I'm Xuan, a freelance project manager and event coordinator based in Taiwan. Over the past 2 years, I've worked across design, exhibition planning, and cross-cultural program execution.</p>
+        <p>My clients are typically Taiwan-based organizations with ambitions beyond the island — government agencies, NGOs, and brands bringing their stories to international audiences.</p>
+        <div class="about-highlight">Project Management × Exhibition Coordination — helping Taiwan land precisely on the international stage.</div>
+        <div class="about-tags">
+          <span class="tag">🇸🇬 ADEX Singapore 2026</span>
+          <span class="tag">🇭🇰 DRT Hong Kong 2025</span>
+          <span class="tag">Taiwan Tourism Administration</span>
+          <span class="tag">TaiwanICDF</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="bring">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">What I Bring</div>
+      <h2 class="section-title">Three things you can count on</h2>
+    </div>
+    <div class="bring-grid">
+      <div class="bring-card reveal">
+        <div class="bring-arrow">→</div>
+        <h3>I move fast.</h3>
+        <p>I don't wait to be told — I see what needs to happen and I make it happen. New projects find their momentum with me.</p>
+      </div>
+      <div class="bring-card reveal">
+        <div class="bring-arrow">→</div>
+        <h3>I connect people.</h3>
+        <p>Whether it's a trade show floor in Singapore or a workshop in Taipei, I'm comfortable starting conversations in unfamiliar rooms.</p>
+      </div>
+      <div class="bring-card reveal">
+        <div class="bring-arrow">→</div>
+        <h3>I follow through.</h3>
+        <p>Every commitment I make, I keep — or I flag it early and come back with a solution. Trust is built one kept promise at a time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="highlights">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Recent Highlights</div>
+      <h2 class="section-title" style="color:white;">Where I've shown up</h2>
+    </div>
+    <div class="highlights-grid">
+      <div class="highlight-card reveal">
+        <div class="highlight-flag">🇸🇬</div>
+        <div class="highlight-title">ADEX Singapore 2026</div>
+        <div class="highlight-desc">Led on-site exhibition coordination for a Taiwanese diving tourism brand, collecting visitor surveys in a multilingual environment.</div>
+        <div class="highlight-num">1,000+</div>
+        <div class="highlight-num-label">VISITOR SURVEYS COLLECTED</div>
+      </div>
+      <div class="highlight-card reveal">
+        <div class="highlight-flag">🇭🇰</div>
+        <div class="highlight-title">DRT Hong Kong 2025</div>
+        <div class="highlight-desc">Managed exhibition logistics, visual coordination, and audience engagement for the Taiwan Pavilion at Hong Kong's premier diving show.</div>
+        <div class="highlight-num">500+</div>
+        <div class="highlight-num-label">VISITOR SURVEYS COLLECTED</div>
+      </div>
+      <div class="highlight-card reveal">
+        <div class="highlight-flag">🏛</div>
+        <div class="highlight-title">Taiwan Tourism Administration</div>
+        <div class="highlight-desc">Supported exhibition planning and coordination for overseas promotional events across Asia, representing Taiwan's official tourism image.</div>
+      </div>
+      <div class="highlight-card reveal">
+        <div class="highlight-flag">🌱</div>
+        <div class="highlight-title">TaiwanICDF</div>
+        <div class="highlight-desc">Coordinated sustainability workshops designed for international participants, bridging local expertise with global audiences.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="trust">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Trust & Reputation</div>
+      <h2 class="section-title">Organizations I've worked with</h2>
+    </div>
+    <div class="clients-row reveal">
+      <span class="client-chip">🏛 Taiwan Tourism Administration</span>
+      <span class="client-chip">🌱 TaiwanICDF</span>
+      <span class="client-chip">🤿 BlueTrend</span>
+      <span class="client-chip">🇸🇬 ADEX Singapore 2026</span>
+      <span class="client-chip">🇭🇰 DRT Hong Kong 2025</span>
+    </div>
+    <div class="testimonial-card reveal">
+      <span class="quote-mark">"</span>
+      <div class="testimonial-text">The Taiwan Pavilion was by far the best at promoting itself in the entire exhibition.</div>
+      <div class="testimonial-source">— On-site observer, DRT Hong Kong 2025</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Ready to show up<br>somewhere new?</h2>
+        <p class="contact-desc">I'm based in Taiwan and open to cross-border project collaboration — especially work that sits at the intersection of culture, events, and international outreach.<br><br>Let's connect if you're looking for someone who can represent your brand with care, wherever the project takes you.</p>
+        <div class="contact-links">
+          <a href="mailto:mialin1220@gmail.com" class="contact-link">📩 &nbsp;mialin1220@gmail.com</a>
+          <a href="https://instagram.com/hxuan_er" target="_blank" class="contact-link">📸 &nbsp;@hxuan_er</a>
+        </div>
+      </div>
+      <div class="contact-cta-box reveal">
+        <h3>You tell me the goal.</h3>
+        <p>I'll handle the rest. Let's bring Taiwan's story to wherever it needs to be seen.</p>
+        <a href="mailto:mialin1220@gmail.com?subject=Collaboration Inquiry | International Exhibition">Send me a message →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 XUAN LIN &nbsp;·&nbsp; Project Management × Exhibition Coordination &nbsp;·&nbsp; Taiwan</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
