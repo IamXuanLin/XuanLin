@@ -142,7 +142,6 @@ section { padding:5.5rem 2.5rem; }
 .testimonial-source { font-size:0.78rem; color:rgba(255,255,255,0.4); font-weight:500; letter-spacing:0.06em; }
 
 /* === CONTACT === */
-#contact { background:var(--bg2); }
 .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center; margin-top:3.5rem; }
 .contact-desc { color:var(--text-mid); line-height:1.9; font-size:0.96rem; }
 .contact-links { display:flex; flex-direction:column; gap:0.75rem; margin-top:2rem; }
