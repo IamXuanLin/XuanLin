@@ -19,6 +19,7 @@ XuanLin/
     ├── index.html              # 主頁（繁體中文版）
     ├── cases.html              # 案例作品集頁（中文）
     ├── xuan-lin-en.html        # 主頁（英文版）
+    ├── favicon.svg             
     ├── css/
     │   └── style.css           # 共用樣式（index + xuan-lin-en 共用）
     ├── js/
