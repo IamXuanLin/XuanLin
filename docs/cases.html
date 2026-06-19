@@ -11,7 +11,8 @@
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet"></noscript>
 <style>
 :root {
   --navy:#0D1B2A; --navy-mid:#1A2D42; --navy-light:#2C3E50;
@@ -142,21 +143,21 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,0.05);color:
       </div>
       <div class="photo-gallery reveal">
         <div class="photo-hero">
-          <img src="images/photos/香港_1.webp" alt="Xuan 站在台灣館前"/>
+          <img src="images/photos/香港_1.webp" alt="Xuan 站在台灣館前" loading="lazy"/>
           <div class="photo-caption">台灣館現場 · 香港 DRT 2025</div>
         </div>
         <div class="photo-grid-2">
           <div class="photo-thumb" onclick="openLightbox(this)">
-            <img src="images/photos/新加坡_4.webp" alt="與觀眾互動"/>
+            <img src="images/photos/新加坡_4.webp" alt="與觀眾互動" loading="lazy"/>
             <div class="photo-caption">與國際觀眾互動</div>
           </div>
           <div class="photo-thumb" onclick="openLightbox(this)">
-            <img src="images/photos/香港_2.webp" alt="現場人潮"/>
+            <img src="images/photos/香港_2.webp" alt="現場人潮" loading="lazy"/>
             <div class="photo-caption">現場人潮踴躍</div>
           </div>
         </div>
         <div class="photo-thumb" onclick="openLightbox(this)" style="border-radius:4px;overflow:hidden;aspect-ratio:16/7;position:relative;">
-          <img src="images/photos/香港_3.webp" alt="BlueTrend 團隊" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;transition:transform 0.4s;"/>
+          <img src="images/photos/香港_3.webp" alt="BlueTrend 團隊" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;transition:transform 0.4s;"/>
           <div class="photo-caption">與藍色脈動 BlueTrend 團隊合影</div>
         </div>
       </div>
@@ -182,26 +183,26 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,0.05);color:
     <div class="case-body reverse">
       <div class="photo-gallery reveal">
         <div class="photo-hero">
-          <img src="images/photos/新加坡_1.webp" alt="台灣館爆滿人潮"/>
+          <img src="images/photos/新加坡_1.webp" alt="台灣館爆滿人潮" loading="lazy"/>
           <div class="photo-caption">TAIWAN Waves of Wonder · 新加坡 ADEX 2026</div>
         </div>
         <div class="photo-grid-2">
           <div class="photo-thumb" onclick="openLightbox(this)">
-            <img src="images/photos/新加坡_2.webp" alt="Xuan 站在台灣館前"/>
+            <img src="images/photos/新加坡_2.webp" alt="Xuan 站在台灣館前" loading="lazy"/>
             <div class="photo-caption">台灣館入口</div>
           </div>
           <div class="photo-thumb" onclick="openLightbox(this)">
-            <img src="images/photos/新加坡_3.webp" alt="與觀眾互動"/>
+            <img src="images/photos/新加坡_3.webp" alt="與觀眾互動" loading="lazy"/>
             <div class="photo-caption">與國際觀眾互動</div>
           </div>
         </div>
         <div class="photo-grid-2">
           <div class="photo-thumb" onclick="openLightbox(this)">
-            <img src="images/photos/新加坡_互動.webp" alt="展場全景"/>
+            <img src="images/photos/新加坡_互動.webp" alt="展場全景" loading="lazy"/>
             <div class="photo-caption">展場全景盛況</div>
           </div>
           <div class="photo-thumb" onclick="openLightbox(this)">
-            <img src="images/photos/新加坡_5.webp" alt="工作人員合照"/>
+            <img src="images/photos/新加坡_5.webp" alt="工作人員合照" loading="lazy"/>
             <div class="photo-caption">所有工作人員合影</div>
           </div>
         </div>
